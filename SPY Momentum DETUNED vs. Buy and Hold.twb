@@ -1,0 +1,1093 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0805.0415                               -->
+<workbook original-version='18.1' source-build='2023.2.1 (20232.23.0805.0415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='portfolio_values' inline='true' name='federated.0qoy7f31s1osrk1e5xo9i12rmhms' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='portfolio_values' name='textscan.1lbpbmx1s4m59y19psdk51mrz3yh'>
+            <connection class='textscan' directory='C:/Users/chris/Documents/WealthMind/Lighthouse Labs/Flex Program/Mid Term Project' filename='portfolio_values.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1lbpbmx1s4m59y19psdk51mrz3yh' name='portfolio_values.csv' table='[portfolio_values#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='Date' ordinal='0' />
+            <column datatype='real' name='Portfolio Value Momentum' ordinal='1' />
+            <column datatype='real' name='Portfolio Value Buy and Hold' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1lbpbmx1s4m59y19psdk51mrz3yh' name='portfolio_values.csv' table='[portfolio_values#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='Date' ordinal='0' />
+            <column datatype='real' name='Portfolio Value Momentum' ordinal='1' />
+            <column datatype='real' name='Portfolio Value Buy and Hold' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[portfolio_values.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[portfolio_values.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[portfolio_values.csv_C59798BA407E4DA886DD51400B3A80B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Portfolio Value Momentum</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Portfolio Value Momentum]</local-name>
+            <parent-name>[portfolio_values.csv]</parent-name>
+            <remote-alias>Portfolio Value Momentum</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[portfolio_values.csv_C59798BA407E4DA886DD51400B3A80B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Portfolio Value Buy and Hold</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Portfolio Value Buy and Hold]</local-name>
+            <parent-name>[portfolio_values.csv]</parent-name>
+            <remote-alias>Portfolio Value Buy and Hold</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[portfolio_values.csv_C59798BA407E4DA886DD51400B3A80B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Portfolio Value Buy and Hold]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Portfolio Value Momentum]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='portfolio_values.csv' datatype='table' name='[__tableau_internal_object_id__].[portfolio_values.csv_C59798BA407E4DA886DD51400B3A80B2]' role='measure' type='quantitative' />
+      <column-instance column='[Portfolio Value Buy and Hold]' derivation='Avg' name='[avg:Portfolio Value Buy and Hold:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Portfolio Value Momentum]' derivation='Avg' name='[avg:Portfolio Value Momentum:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Portfolio Value Momentum]' derivation='Sum' name='[sum:Portfolio Value Momentum:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[avg:Portfolio Value Buy and Hold:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[avg:Portfolio Value Momentum:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[sum:Portfolio Value Momentum:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='portfolio_values.csv' id='portfolio_values.csv_C59798BA407E4DA886DD51400B3A80B2'>
+            <properties context=''>
+              <relation connection='textscan.1lbpbmx1s4m59y19psdk51mrz3yh' name='portfolio_values.csv' table='[portfolio_values#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='Date' ordinal='0' />
+                  <column datatype='real' name='Portfolio Value Momentum' ordinal='1' />
+                  <column datatype='real' name='Portfolio Value Buy and Hold' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Portfolio Value Per Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='portfolio_values' name='federated.0qoy7f31s1osrk1e5xo9i12rmhms' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qoy7f31s1osrk1e5xo9i12rmhms'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Portfolio Value Buy and Hold]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Portfolio Value Momentum]' role='measure' type='quantitative' />
+            <column-instance column='[Portfolio Value Buy and Hold]' derivation='Avg' name='[avg:Portfolio Value Buy and Hold:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Portfolio Value Momentum]' derivation='Avg' name='[avg:Portfolio Value Momentum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[avg:Portfolio Value Buy and Hold:qk]' />
+              <text column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[avg:Portfolio Value Momentum:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{8AEA3939-66D2-4BE3-BA68-193B82823B50}' />
+    </worksheet>
+    <worksheet name='SPY Momentum vs. Buy-And-Hold'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>SPY (DETUNED) Momentum vs. Buy-And-Hold</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='portfolio_values' name='federated.0qoy7f31s1osrk1e5xo9i12rmhms' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qoy7f31s1osrk1e5xo9i12rmhms'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Portfolio Value Buy and Hold]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Portfolio Value Momentum]' role='measure' type='quantitative' />
+            <column-instance column='[Portfolio Value Buy and Hold]' derivation='Avg' name='[avg:Portfolio Value Buy and Hold:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Portfolio Value Momentum]' derivation='Avg' name='[avg:Portfolio Value Momentum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Portfolio Value Buy and Hold]' derivation='Avg' forecast-column-base='[avg:Portfolio Value Buy and Hold:qk]' forecast-column-type='forecast-prediction-interval-lower' name='[fPIL:avg:Portfolio Value Buy and Hold:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Portfolio Value Momentum]' derivation='Avg' forecast-column-base='[avg:Portfolio Value Momentum:qk]' forecast-column-type='forecast-prediction-interval-lower' name='[fPIL:avg:Portfolio Value Momentum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Portfolio Value Buy and Hold]' derivation='Avg' forecast-column-base='[avg:Portfolio Value Buy and Hold:qk]' forecast-column-type='forecast-prediction-interval-upper' name='[fPIU:avg:Portfolio Value Buy and Hold:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Portfolio Value Momentum]' derivation='Avg' forecast-column-base='[avg:Portfolio Value Momentum:qk]' forecast-column-type='forecast-prediction-interval-upper' name='[fPIU:avg:Portfolio Value Momentum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Portfolio Value Buy and Hold]' derivation='Avg' forecast-column-base='[avg:Portfolio Value Buy and Hold:qk]' forecast-column-type='forecast-value' name='[fVal:avg:Portfolio Value Buy and Hold:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Portfolio Value Momentum]' derivation='Avg' forecast-column-base='[avg:Portfolio Value Momentum:qk]' forecast-column-type='forecast-value' name='[fVal:avg:Portfolio Value Momentum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:Date:ok]' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2023' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]' />
+              <color column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='true' y-axis='true' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Buy and Hold:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]' />
+              <color column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]' />
+              <text column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Buy and Hold:qk]' />
+              <text column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]' />
+              <color column='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='true' y-axis='true' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Buy and Hold:qk] + [federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk])</rows>
+        <cols>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fPIL:avg:Portfolio Value Momentum:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fPIU:avg:Portfolio Value Momentum:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2026</value>
+                <value>522204.47420361545</value>
+                <value>5154628.6908042952</value>
+                <value>2838416.5825039553</value>
+                <value>&quot;Estimate&quot;</value>
+                <value>&quot;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Buy and Hold:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fPIL:avg:Portfolio Value Buy and Hold:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fPIU:avg:Portfolio Value Buy and Hold:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Buy and Hold:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2026</value>
+                <value>1096040.8921356511</value>
+                <value>2361483.5798114128</value>
+                <value>1728762.2359735321</value>
+                <value>2838416.5825039553</value>
+                <value>&quot;Estimate&quot;</value>
+                <value>&quot;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Buy and Hold:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Buy and Hold:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fPIL:avg:Portfolio Value Buy and Hold:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fPIU:avg:Portfolio Value Buy and Hold:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Buy and Hold:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2021</value>
+                <value>%null%</value>
+                <value>%null%</value>
+                <value>1651025.7729937686</value>
+                <value>1456633.7639359448</value>
+                <value>&quot;Actual&quot;</value>
+                <value>&quot;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Buy and Hold:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fPIL:avg:Portfolio Value Momentum:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fPIU:avg:Portfolio Value Momentum:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]</field>
+                  <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2021</value>
+                <value>%null%</value>
+                <value>%null%</value>
+                <value>1456633.7639359448</value>
+                <value>&quot;Actual&quot;</value>
+                <value>&quot;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[fVal:avg:Portfolio Value Momentum:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{5349CF6E-787C-42C7-83D9-DEAE802ECC21}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-orientation' id='dash-text_13' value='0' />
+          <format attr='text-align' id='dash-text_13' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='9' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+            <zone h='98000' id='3' param='horz' type-v2='layout-flow' w='85333' x='667' y='1000'>
+              <zone h='98000' id='5' param='horz' type-v2='layout-flow' w='85333' x='667' y='1000'>
+                <zone h='98000' id='6' param='vert' type-v2='layout-flow' w='85333' x='667' y='1000'>
+                  <zone fixed-size='170' h='21250' id='11' is-fixed='true' param='horz' type-v2='layout-flow' w='85333' x='667' y='1000'>
+                    <zone h='21250' id='12' name='KPI' w='85333' x='667' y='1000'>
+                      <layout-cache fixed-size-h='154' fixed-size-w='2482' type-h='fixed' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='76750' id='7' name='SPY Momentum vs. Buy-And-Hold' w='85333' x='667' y='22250'>
+                    <layout-cache minheight='214' minwidth='276' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='8' is-fixed='true' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='13333' x='86000' y='1000'>
+              <zone forceUpdate='true' h='49000' id='13' type-v2='text' w='13333' x='86000' y='1000'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#00007f' fontsize='15'>Single</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#00007f' fontsize='15'>Momentum</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#00007f' fontsize='15'>Strategy</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='10' name='SPY Momentum vs. Buy-And-Hold' pane-specification-id='2' param='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]&#10;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]' type-v2='color' w='13333' x='86000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='18' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                <zone fixed-size='162' h='21250' id='12' is-fixed='true' name='KPI' w='85333' x='667' y='1000'>
+                  <layout-cache fixed-size-h='154' fixed-size-w='2482' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='49000' id='13' type-v2='text' w='13333' x='86000' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#00007f' fontsize='15'>Single</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#00007f' fontsize='15'>Momentum</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#00007f' fontsize='15'>Strategy</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='76750' id='7' is-fixed='true' name='SPY Momentum vs. Buy-And-Hold' w='85333' x='667' y='22250'>
+                  <layout-cache minheight='214' minwidth='276' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='10' name='SPY Momentum vs. Buy-And-Hold' pane-specification-id='2' param='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]&#10;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]' type-v2='color' w='13333' x='86000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C3606CCC-7544-4CC0-AB59-B4003703C9A6}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='SPY Momentum vs. Buy-And-Hold'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]&#10;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]</field>
+            <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Date:nk]</field>
+            <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{63E03072-1B28-40DA-9BD3-95E02156D5BA}' />
+    </window>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CAAB9A64-6F4C-4AE9-9D5C-343E1033F059}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='KPI' />
+        <viewpoint name='SPY Momentum vs. Buy-And-Hold'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[:Measure Names]&#10;[federated.0qoy7f31s1osrk1e5xo9i12rmhms].[none:Forecast Indicator:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{47C56C18-978C-4823-A503-ECA003E955A0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      IlGvh2s3b9Fsr/D1l5e27vMkoOLx+lmen8Fe14hn2U3I72Vmdmnn/G/nZ2HVi3d1gdtTs5gK
+      oW9dv4THG2Vxdgqj1Ul0bYWrW9edWo7dV+/mxAz6jJ/zl2/S0NLA+O05oMCaL8Hy3Ay+dS/z
+      S4skkmm6moxML4T21Nu+f6lsHocaxxvP3SlvWc+JkZOUckmMVuduB1hZC+NwOtFrJOLhAJJu
+      MwgqKDIDTVpW4rC+uo5Op6GQiSIb926vT8/Nk4kFuHjtNlq5xFqkQDK4itmymd5gdZCMhWis
+      d7K6tk6qCE6nE1nZO6h58+33SXlWuDwxjVYusTi/TP/Rk6wszAHQ2d2FDJx5/S1qykFmw5X7
+      6kk6M7ZSnI5jr9DfoueTX3xOvAC+gB+AWMhHS2cvsloikasQDkU5MXKMudmZPfUquRiSwYGj
+      tpE6uxlZb6azpfFOgnKGTPmOfZ98NUZFoyPg999Xz6ST8ITSyBrdrvJLhzxY6tt2ys81cJLX
+      hru4cfP2nno6SSGfz6M3mlkNJpEKua37DCBhNmjxh2PkklGKiob65nasd339+XZ+DAY9eoMB
+      nV6P02aktu/EnetXCuTzeRRJR6WQplQu71zXJJfuq2c1ykQzBTQ6Heur61gsBqCMQW9Br9fT
+      2tGFXiMhKUUW/CWG+1x76m3fv1IuTVJbT3Z1cld5byzP0NQ1SKWQ3h0EN7c3Mzt2jdaeXgLr
+      Xsw1ThKxCF2tDcx6YhwdaCcaj9PW1UsuGafW1UDtHkFwV08vdXX1DA8P46qrp7W9gVAwisvl
+      JBhOUmvVU5aN2Ew6Snonrwx3ce36OP1DRzHsMQVxyT1NRtLz8ugorrp6Dh0ZwjN1i8a2VgKh
+      OGHfOpFEBpks69Eyr5zsY+w+enpZIZBRscsF5pb8nHrtNQa6WrBZzPiDEZLRIPmSCuUcybzC
+      6dHjTE9M0N07iMWkv0cvEo7T0dVOLLCOx7uBTqfFt7GBgkI4msaoldCbbFRycdaiZV579TTt
+      jXU4XM2Y9vjKuK0XDmyQSGbo6u0mGU/slB8aHZ2tjWTTSUp6Jy1WlamZeQ4NDGE26O7RK+TS
+      FGQjHU1OEokMh0dOsHR7jNbOTnz+CLJapLG1i1QshM5ohUIKXyCI09WCUa+hmEmwsLyykx+T
+      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
+    </thumbnail>
+    <thumbnail height='86' name='KPI' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='SPY Momentum vs. Buy-And-Hold' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
