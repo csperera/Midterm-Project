@@ -22,7 +22,7 @@ Creation of the model and results – After much time spent perusing Backtrader,
  
 ## Results
 ### Final Output
-Final output showed that investment of $10,000 in the DETUNED Single Momentum system at inception (January 20th, 1993) would now be worth about $1,511,135 while a similar investment in a Buy-and-Hold strategy would be worth $1,713,255.  As I mentioned we did DETUNE the software for less than optimal performance however a fully-tuned version should produce returns in the region of 15% per annum over long periods of time. 
+Final output showed that investment of $10,000 in the DETUNED Single Momentum system at inception (January 20th, 1993) would now be worth about $1,511,135 while a similar investment in a Buy-and-Hold strategy would be worth $1,713,255.  As I mentioned we did DETUNE the software for less than optimal performance however a fully-tuned version should produce returns in the region of 15% per annum over multi-decade periods of time. 
 
 ### Statsmodels Regression Analysis
 Statsmodels regression analysis indicates a R-square of about 0.856 indicating that the buy-and-hold strategy explains a significant amount of the single momentum system’s returns. F-statistic and P-value also confirmed this as statistically significant. 
